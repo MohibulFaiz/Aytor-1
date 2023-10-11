@@ -1,0 +1,209 @@
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto:wght@300;400&display=swap');
+
+
+:root{
+    --PrimaryFont :'Josefin Sans', sans-serif;
+    --SecondaryFont : 'Roboto', sans-serif;
+    --Primarycolor : #FF6F61;
+    --SecondaryColor : #1D1D1D;
+}
+
+h1,h2,h3,h4,h5,h6,ul,p,span,ol {
+  margin :0;
+  padding :0;
+}
+
+
+body{
+    font-family: var(--PrimaryFont);
+}
+
+
+
+#navbarSupportedContent ul li a{
+color: var(--Text-Color, #11161E);
+font-size: 16px;
+line-height: 26px;
+padding: 37px 22.5px;
+transition: .300sec;
+}
+
+
+#navbarSupportedContent ul li:hover a {
+    color: var(--Primarycolor);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.icongroups ul li {
+    display: inline-block;
+}
+
+.icongroups ul li span,
+.icongroups ul li a{
+    margin: 0px 10px;
+    color: var(--SecondaryColor);
+    font-size: 20px;
+    position: relative;
+}
+
+.icongroups ul li a .cartnumber{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--Primarycolor);
+    border-radius: 50%;
+    color: #FFF;
+font-size: 14px;
+line-height: 14px;
+text-align: center;
+line-height: 18px;
+right: -17px;
+top: -3px;
+}
+
+
+.navbar_sm {
+    padding: 20px 0;
+    box-shadow:  rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.navbar_sm .logo img {
+height: 50px;
+
+}
+
+.navbar_sm .menu {
+    font-size: 22px;
+}
+
+.navbar_sm button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+.offcanvas-header{
+    height: 40px;
+    padding: 10px 5px;
+}
+
+
+
+.navbar_sm .offcanvas-body ul{
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+
+.navbar_sm .offcanvas-body ul li a {
+    padding: 10px 0;
+    color: var(--secondaryColor);
+    display: block;
+  }
+  
+
+.navbar_sm .offcanvas-body ul li:hover a {
+    color: var(--Primarycolor);
+    font-size: 20px;
+    font-weight: 600;
+}
+/** Banner Starts **/
+#banner {
+    position: relative;
+}
+
+#banner .slides {
+width: 100%;
+height: 800px;
+background-size: cover;
+background-position: center;
+}
+
+
+#banner .slides .bannercnt h4 {
+   font-size: 18px;
+    font-weight: 600;
+    color: var(--SecondaryColor);
+}
+
+
+#banner .slides .bannercnt h2 {
+font-size: 64px;
+font-weight: 700;
+color: var(--SecondaryColor);
+}
+
+
+#banner .slides .bannercnt p {
+    color: #1D1D1D;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+}
+
+#banner .slides .bannercnt a {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    width: 196.36px;
+    height: 56px;
+    background-color: var(--Primarycolor);
+    color: #FFF;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    transition: 300ms;
+}
+
+
+#banner .slides .bannercnt:hover a {
+    background-color: #FFF;
+    color: var(--Primarycolor);
+}
+
+#banner .slides .bannercnt {
+    transform: translateY(200%);
+    transition: 300ms ease;
+    opacity: 0;
+
+}
+
+#banner .slides.slick-active .bannercnt {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+
+#banner .bannerDots {
+position:absolute;
+bottom: 25%;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+}
+
+
+#banner .bannerDots button {
+    width: 30px;
+    height: 15px;
+    background-color: #FFF;
+    border-radius: 5px;
+    display: block;
+    border: none;
+    outline: none;
+    color: transparent;
+    margin-right: 5.45px;
+    transition: 0.3s;
+}
+
+#banner .bannerDots .slick-active button{
+    background: var(--Primarycolor);
+    width: 60px;
+}
+/** Banner Ends **/
+

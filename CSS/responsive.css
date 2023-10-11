@@ -1,0 +1,11 @@
+@media (min-width: 320px) and (max-width: 767px) {
+    #banner .slides {
+      height: 300px;
+    }
+    #banner .slides .banner_cnt h2 {
+      font-size: 30px;
+    }
+    #banner .bannerDots {
+      display: none !important;
+    }
+  }
